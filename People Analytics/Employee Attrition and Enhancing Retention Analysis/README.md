@@ -1,37 +1,68 @@
-HR Analytics for Reducing Employee Attrition and Enhancing Retention
-Project Overview
-This project analyzes an HR dataset to identify key drivers of employee attrition and develop retention strategies to improve employee engagement and loyalty. By leveraging data on employee demographics, job satisfaction, and work environment, the analysis uncovers patterns in turnover and provides actionable recommendations to reduce attrition and foster a positive workplace.
-Business Problem
-High employee turnover increases recruitment costs, disrupts team dynamics, and impacts productivity.
-HR needs data-driven insights to understand why employees leave and how to retain top talent.
-Specific Goals
-Identify factors contributing to attrition (e.g., age, satisfaction, commute distance).
-Highlight characteristics of employees who stay to inform retention strategies.
-Approach
-Data Cleaning: Handle missing values, encode categorical variables, and prepare the dataset.
-Exploratory Data Analysis (EDA): Analyze attrition trends and retention factors using statistical summaries and visualizations.
-Predictive Modeling: Build a model to predict attrition and identify key drivers.
-Recommendations: Translate insights into HR strategies (e.g., improving work-life balance, targeting high-risk groups).
-Tools Used
-Python (pandas, numpy, scikit-learn)
-Visualization libraries (matplotlib, seaborn)
-Jupyter Notebook for documentation
-Deliverables
-Jupyter Notebook with code, visualizations, and insights
-Summary of findings and recommendations for HR stakeholders
-Visualizations (e.g., bar plots, heatmaps) for easy interpretation
-Dataset
-The dataset used for this project is sourced from Kaggle ("anshika2301/hr-analytics-dataset") and contains HR-related information for employees, including:
-Demographics (age, education, etc.)
-Job satisfaction and work environment metrics
-Attrition status (Yes/No)
-Getting Started
-To run this project, you'll need to have Python and the required libraries installed. You can install the dependencies using pip:
-Bash
-pip install pandas numpy scikit-learn matplotlib seaborn
-Usage
-Clone the repository: git clone https://github.com/your-username/hr-analytics.git
-Navigate to the project directory: cd hr-analytics
-Run the Jupyter Notebook: jupyter notebook
-Contributing
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+# HR Analytics for Reducing Employee Attrition and Enhancing Retention
+
+Employee turnover is a significant challenge for organizations, costing millions annually in recruitment, training, and lost productivity. Understanding why employees leave and what keeps them engaged is critical for building a stable, productive workforce. This HR analytics project uses a dataset containing employee information, such as age, job satisfaction, commute distance, and tenure, to address two key questions:
+
+### What drives employee attrition? Are factors like long commutes, low satisfaction, or lack of career growth pushing employees to leave?
+
+### How can we improve retention? What characteristics (e.g., high compensation, training opportunities) are associated with employees who stay?
+
+
+By analyzing these questions, the project aims to provide HR teams with actionable insights to reduce turnover and enhance employee retention. The analysis includes data exploration, predictive modeling, and visualizations to uncover trends and propose strategies tailored to the organization’s workforce.
+
+
+## Business Problem
+
+* High employee turnover increases recruitment costs, disrupts team dynamics, and impacts productivity.
+* HR needs data-driven insights to understand why employees leave and how to retain top talent.
+
+## Specific Goals
+
+* Identify factors contributing to attrition (e.g., age, satisfaction, commute distance).
+* Highlight characteristics of employees who stay to inform retention strategies.
+
+## Data Description
+The dataset sourced from Kaggle ("anshika2301/hr-analytics-dataset"), contains HR-related information for employees. The sample provided includes the following key columns (out of 35 total columns):
+
+* EmpID: Unique employee identifier.
+
+* Age: Employee’s age (numeric).
+
+* AgeGroup: Age range (e.g., 18-25).
+
+* Attrition: Whether the employee left (Yes/No).
+
+* BusinessTravel: Frequency of travel (e.g., Travel_Rarely, Travel_Frequently).
+
+* DailyRate: Daily compensation rate (numeric).
+
+* Department: Employee’s department (e.g., Research & Development, Sales).
+
+* DistanceFromHome: Distance from home to workplace (numeric, in miles).
+
+* Education: Education level (numeric, scale 1-5).
+
+* EducationField: Field of study (e.g., Life Sciences, Medical, Marketing).
+
+* JobSatisfaction: Satisfaction with job (numeric, scale 1-4).
+
+* EnvironmentSatisfaction: Satisfaction with work environment (numeric, scale 1-4).
+
+* RelationshipSatisfaction: Satisfaction with workplace relationships (numeric, scale 1-4).
+
+* StandardHours: Standard working hours (numeric, typically 80 biweekly).
+
+* StockOptionLevel: Level of stock options (numeric, scale 0-3).
+
+* TotalWorkingYears: Total years of work experience (numeric).
+
+* TrainingTimesLastYear: Number of training sessions attended last year (numeric).
+
+* WorkLifeBalance: Perceived work-life balance (numeric, scale 1-4).
+
+* YearsAtCompany: Years employed at the company (numeric).
+
+* YearsInCurrentRole: Years in current role (numeric).
+
+* YearsSinceLastPromotion: Years since last promotion (numeric).
+
+* YearsWithCurrManager: Years with current manager (numeric).
